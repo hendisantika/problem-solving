@@ -28,5 +28,35 @@ Your answer should return all possible combinations.
 
 Example: 1 + 23 - 4 + 5 + 6 + 78 - 9 = 100
 
---
+## SQL Cases
+
+Given the table. please write query to show following results
+
+### Show the presence of students each day
+> showed in following structure
+
+|name      |class   |card_id|date          |
+| -------- | ------ | ----- | ------------ |
+|Rizaq     |X       |abcd123|    2019-05-01|
+|John      |Y       |abcd124|    2019-05-01|
+|Lanang    |XY      |abcd120|    2019-05-01|
+|Rizaq     |X       |abcd123|    2019-05-02|
+|Dan       |MM      |abcd122|    2019-05-02|
+|Snow      |XX      |abcd121|    2019-05-02|
+|John      |Y       |abcd124|    2019-05-02|
+|Lanang    |XY      |abcd120|    2019-05-02|
+|Lanang    |XY      |abcd120|    2019-05-03|
+|John      |Y       |abcd124|    2019-05-03|
+|Snow      |XX      |abcd121|    2019-05-03|
+|Rizaq     |X       |abcd123|    2019-05-04|
+|Lanang    |XY      |abcd120|    2019-05-04|
+
+### Show the number of student's presence and show it from the biggest presence with following structure
+|presence  |student_card_id|   name  |
+| -------  | ------------- | ------- |
+|4         |   abcd120     |   Lanang|
+|3         |   abcd123     |   Rizaq |
+|3         |   abcd124     |   John  |
+|2         |   abcd121     |   Snow  |
+|1         |   abcd122     |   Dan   |
 
