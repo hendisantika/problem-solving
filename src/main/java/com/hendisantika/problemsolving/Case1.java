@@ -10,7 +10,7 @@ package com.hendisantika.problemsolving;
  * Time: 21:10
  */
 public class Case1 {
-    // Function to ind missing number
+    // Function to find missing number
     static int getMissingNo(int[] a, int n) {
         int i, total;
         total = (n + 1) * (n + 2) / 2;
