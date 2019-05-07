@@ -59,12 +59,16 @@ public class Case2 {
         }
     }
 
-    public static void removeDupInIntArray(int[] ints) {
+    public static int[] removeDupInIntArray(int[] ints) {
         Set<Integer> setString = new LinkedHashSet<Integer>();
         for (int i = 0; i < ints.length; i++) {
             setString.add(ints[i]);
         }
         System.out.println(setString);
+
+        int[] array = setString.stream().mapToInt(Number::intValue).toArray();
+
+        return array;
     }
 
 
@@ -78,12 +82,13 @@ public class Case2 {
 //        n = removeDuplicates(a, n);
 //
         // Print updated array
-        for (int i = 0; i < n; i++)
-            System.out.print(a[i] + " ");
+//        for (int i = 0; i < n; i++)
+//            System.out.print(a[i] + " ");
 
-        System.out.println("============");
-        removeDupInIntArray(a);
-        System.out.println("============");
+        System.out.println("===================================");
+        int[] temp = removeDupInIntArray(a);
+        System.out.println("===================================");
+        printPairs(temp, 15);
 
 
 //        System.out.println("Remove Duplicate number: " + removeDuplicates(a, a.length));
